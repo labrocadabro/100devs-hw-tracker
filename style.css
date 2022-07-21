@@ -1,0 +1,385 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.cf:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 95%;
+  min-width: 775px;
+  margin: 3rem auto;
+}
+
+.stick {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding-top: 0.5rem;
+  width: 100%;
+  z-index: 2;
+  font-family: "Rubik", sans-serif;
+}
+
+.left {
+  float: left;
+  padding-left: 1.5rem;
+}
+
+.right {
+  float: right;
+  padding-right: 1.5rem;
+}
+
+thead {
+  position: sticky;
+  top: 4rem;
+  z-index: 2;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  color: #1d3557;
+  background: white;
+}
+
+a {
+  color: #A31420;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-bottom: 1px dotted transparent;
+}
+
+a:hover {
+  border-bottom: 1px dotted #457b9d;
+  color: #800F18;
+  transition: all 0.2s ease;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+h1 {
+  font: 500 3.5rem "Rubik", sans-serif;
+  margin-bottom: 1rem;
+  color: #A31420;
+}
+
+table {
+  border: 1px solid #1d3557;
+}
+
+table thead tr {
+  border-bottom: 1px solid #1d3557;
+  box-shadow: 0 5px 10px -7px rgba(29, 53, 87, 0.7);
+}
+
+table thead th {
+  font: 500 2rem "Rubik", sans-serif;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  background: #457b9d;
+  color: #f1faee;
+  vertical-align: middle;
+  padding: 1.5rem;
+  text-shadow: 1px 1px 2px #1d3557;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+table tbody tr:nth-child(even) {
+  background: #D4EDED;
+}
+
+table tbody tr:nth-child(odd) {
+  background: #f1faee;
+}
+
+table tbody td {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  line-height: 2.1rem;
+}
+
+table tbody td:first-child,
+table tbody td:nth-child(2),
+table tbody td:nth-child(3),
+table tbody td:last-child {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+table tbody td:first-child input[type=checkbox],
+table tbody td:nth-child(2) input[type=checkbox],
+table tbody td:nth-child(3) input[type=checkbox],
+table tbody td:last-child input[type=checkbox] {
+  float: none;
+  margin: 0 auto;
+}
+
+table tbody td:nth-child(4),
+table tbody td:nth-child(5) {
+  padding: 1.5rem 2rem;
+}
+
+table td+td {
+  border-left: 1px dotted rgba(69, 123, 157, 0.5);
+}
+
+p {
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.submit-req {
+  color: #E52434;
+  font-size: 2rem;
+}
+
+h3 {
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  font-size: 1.7rem;
+}
+
+ul {
+  position: relative;
+}
+
+ul li {
+  margin-bottom: 0.7rem;
+}
+
+ul li.required:before {
+  content: "*";
+  color: #E52434;
+  font-size: 2rem;
+  position: absolute;
+  left: -1.6rem;
+}
+
+ul li.no-new {
+  font-style: italic;
+}
+
+span.required {
+  font: 2rem "Merriweather", serif;
+  color: #E52434;
+}
+
+a.submit {
+  display: block;
+  background: #C91826;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  padding: 1rem 1.5rem;
+  border: 1px solid #A31420;
+  border-radius: 5px;
+  box-shadow: 2px 2px 7px -3px rgba(29, 53, 87, 0.7);
+  text-shadow: 2px 2px 2px #A31420;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+a.submit:hover {
+  text-decoration: none;
+  background: #E52434;
+  border-color: #C91826;
+  transition: all 0.5s ease;
+}
+
+input[type=checkbox] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0 0.5rem 0 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid currentColor;
+  border-radius: 0.3rem;
+  transform: translateY(0.1rem);
+  display: grid;
+  place-content: center;
+  float: left;
+}
+
+input[type=checkbox]:before {
+  content: "";
+  transform: scale(0);
+  width: 1rem;
+  height: 1rem;
+  box-shadow: inset 1rem 1rem #A31420;
+  transition: 120ms transform ease-in-out;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type=checkbox]:checked:before {
+  transform: scale(1);
+}

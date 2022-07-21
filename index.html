@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&amp;family=Rubik:wght@400;500&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>100 Devs Homework Tracker</title>
+</head>
+
+<body>
+    <header>
+        <h1>#100Devs Homework Tracker</h1>
+    </header>
+    <main>
+        <p>This tracker is a little tool I built for myself because I didn't keep up with the homework as I watched the
+            videos. It contains far less information than other resources because I wanted something that focused
+            exclusively on homework. If you're in need of links to class videos, follow along materials, slides, etc,
+            check out <a target="_blank" href="https://100devsfollowalong.netlify.app/index.html">100 Devs Follow
+                Along</a> or <a target="_blank"
+                href="https://winchy82dev.notion.site/12268a73ea854ae9bff22660d8a42274?v=403f5589c3734d09a3874648dfcb86fa">100
+                Devs Course List</a>, and huge credit goes to the author of <a target="_blank"
+                href="https://docs.google.com/document/d/1VaPpSFaypHasG5piX8bCsitQOpz9yqtF/edit#">this homework
+                checklist</a> which I used as my main source of information.</p>
+        <p>Checking the <em><strong>done</strong></em> checkbox will check off all the tasks for that week, and checking
+            off all the tasks will automatically check <em><strong>done</strong></em>. <em><strong>hide
+                    completed</strong></em> will hide rows when their <em><strong>done</strong></em> checkbox is
+            checked; it will not hide individual tasks. <em><strong>Done</strong></em> will be checked and classes will
+            be hidden by <em><strong>hide completed</strong></em> even if the optional pushwork is not complete. The
+            site uses localstorage to keep track of checkbox status, so as long as you keep using the same browser, your
+            completions will be tracked.</p>
+        <div class="stick">
+            <p class="left"><span class="required">*</span> homework for submission</p>
+            <p class="right"><input type="checkbox" name="hide"> Hide completed</p>
+            <div class="clear"></div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Class</th>
+                    <th>Due</th>
+                    <th>Done</th>
+                    <th>Assignment</th>
+                    <th>Push Work/Extras</th>
+                    <th>Submit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>3</td>
+                    <td> <input type="checkbox" name="hw1"></td>
+                    <td>
+                        <p></p>
+                        <ul>
+                            <li class="required"><input type="checkbox" name="hw1-1"> Complete Coursera Learning How To
+                                Learn and submit screenshot of completion page. You can upload your screenshot to <a
+                                    target="_blank" href="https://imgbb.com/">https://imgbb.com/</a> or another image
+                                hosting service.</li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td><a class="submit" target="_blank" href="https://forms.gle/9FYrUMFKMk4MpEZG7">Submit</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>4</td>
+                    <td> <input type="checkbox" name="hw2"></td>
+                    <td>
+                        <ul>
+                            <li class="required"><input type="checkbox" name="hw2-1"> Build: HTML for BBC Website (see
+                                bbc-image.png in <a target="_blank"
+                                    href="https://drive.google.com/file/d/1g0-ECVZnoRzKSB18Hwfl5wxQP2Jes66Z/view">class
+                                    2 zip file</a>). It doesn't need to look like the image, you just need to do the
+                                HTML structure. Upload your code to <a target="_blank"
+                                    href="https://glitch.com/">glitch</a>.</li>
+                            <li><input type="checkbox" name="hw2-2"> Use <a target="_blank"
+                                    href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN</a> </li>
+                            <li><input type="checkbox" name="hw2-3"> Read <a target="_blank"
+                                    href="https://learn.shayhowe.com/html-css/ ">Shay Howe: Learn to Code</a> (all 12)
+                            </li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td><a class="submit" target="_blank" href="https://forms.gle/inMYVvbEZt2fmzng9">Submit</a> </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>5</td>
+                    <td> <input type="checkbox" name="hw3"></td>
+                    <td>
+                        <ul>
+                            <li class="required"><input type="checkbox" name="hw3-1"> Finish Khan Academy and Tech
+                                Crunch from class 3 (<a target="_blank"
+                                    href="https://drive.google.com/file/d/1IFzC6_3_-jUcUN_XcYft3qusro81srsc/view">class
+                                    materials here</a>). HTML only. Upload your code to <a target="_blank"
+                                    href="https://glitch.com/">glitch</a>.</li>
+                            <li><input type="checkbox" name="hw3-2"> Read <a target="_blank"
+                                    href="https://learnlayout.com/">Learn layout</a> </li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td><a class="submit" target="_blank" href="https://forms.gle/w9Awq51mxmcYHy4h7">Submit</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>6</td>
+                    <td> <input type="checkbox" name="hw4"></td>
+                    <td>
+                        <ul>
+                            <li class="required"><input type="checkbox" name="hw4-1"> Finish Simple Site Lab from class
+                                4, HTML and CSS. (<a target="_blank"
+                                    href="https://drive.google.com/file/d/1NvyWASlnYc9BRki9jiEhEQO5DdNn06Kq/view">class
+                                    materials</a>). Upload your code to <a target="_blank"
+                                    href="https://codepen.io/">codepen</a>. </li>
+                            <li><input type="checkbox" name="hw4-2"> Do <a target="_blank"
+                                    href="https://www.typingtest.com/">five minute typing test</a></li>
+                            <li><input type="checkbox" name="hw4-3"> <a target="_blank"
+                                    href="https://www.keybr.com/">Practice typing</a></li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td>See class 5</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td> <input type="checkbox" name="hw5"></td>
+                    <td>
+                        <ul>
+                            <li class="required"><input type="checkbox" name="hw5-1"> Complete the Three Layouts from
+                                class 5, HTML and CSS. You can find the layouts on the last few slides <a
+                                    target="_blank"
+                                    href="https://slides.com/leonnoel/100devs2-css-more-basics#/44">here</a>. Upload
+                                your code to <a target="_blank" href="https://codepen.io/">codepen</a>.</li>
+                            <li><input type="checkbox" name="hw5-2"> Read <a target="_blank"
+                                    href="https://learn.shayhowe.com/advanced-html-css/responsive-web-design/">Shay
+                                    Howe: Responsive Design</a></li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td><a class="submit" target="_blank" href="https://forms.gle/rvPhDrbp56DQKgPaA">Submit</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>8</td>
+                    <td> <input type="checkbox" name="hw6"></td>
+                    <td>
+                        <ul>
+                            <li class="required"><input type="checkbox" name="hw6-1"> Make <a target="_blank"
+                                    href="https://slides.com/leonnoel/100devs2-css-more-basics#/42">15 minutes of
+                                    pain</a> responsive (use floats and 3 media queries). Upload your code to <a
+                                    target="_blank" href="https://codepen.io/">codepen</a>.</li>
+                            <li><input type="checkbox" name="hw6-2"> Read <a target="_blank"
+                                    href="https://learn.shayhowe.com/advanced-html-css/">Shay How: Advanced</a> (all 10)
+                            </li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td><a class="submit" target="_blank" href="https://forms.gle/AaoHzDEXm3Hjc7JL8">Submit</a></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>9</td>
+                    <td> <input type="checkbox" name="hw7"></td>
+                    <td>
+                        <ul>
+                            <li><input type="checkbox" name="hw7-1"> Read <a target="_blank"
+                                    href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Guide to
+                                    Flexbox</a> </li>
+                            <li><input type="checkbox" name="hw7-2"> Do <a target="_blank"
+                                    href="http://flexboxfroggy.com/">Flexbox Froggy</a> </li>
+                            <li><input type="checkbox" name="hw7-3"> Watch Independence Day</li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td>Nothing to submit</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>12</td>
+                    <td> <input type="checkbox" name="hw8"></td>
+                    <td>
+                        <ul>
+                            <li class="required"><input type="checkbox" name="hw8-1"> Complete the 3 layouts we did in
+                                class (<a target="_blank"
+                                    href="https://drive.google.com/file/d/14GgXJpPkM9A-SZBDyW9f4443GKR69P7Q/view">class
+                                    materials</a>)</li>
+                            <li class="required"><input type="checkbox" name="hw8-2"> Do the Level Ground &amp; Source
+                                layouts (see <em><strong>homework-layout-photos</strong></em> folder in the <a
+                                    target="_blank"
+                                    href="https://drive.google.com/file/d/14GgXJpPkM9A-SZBDyW9f4443GKR69P7Q/view">class
+                                    materials</a>). Upload your code for both of these assignments to <a target="_blank"
+                                    href="https://codepen.io/">codepen</a>.</li>
+                            <li class="no-new">Nothing new added in class 9</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h3>Push Work</h3>
+                        <ul>
+                            <li class="required"><input type="checkbox" name="hw8-pw1"> Complete Pushwork layout (see
+                                <em><strong>homework-layout-photos</strong></em> folder)
+                            </li>
+                            <li><input type="checkbox" name="hw8-pw2"> add media queries to other layouts</li>
+                        </ul>
+                    </td>
+                    <td>See Class 10</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>12</td>
+                    <td> <input type="checkbox" name="hw10"></td>
+                    <td>
+                        <ul>
+                            <li class="required"><input type="checkbox" name="hw10-1"> Do the Restaurant &amp; Hair
+                                Salon layouts (see <em><strong>layout-photos</strong></em> folder in the <a
+                                    target="_blank"
+                                    href="https://drive.google.com/file/d/1NvvdInZT1SoYGwCFYXLh1zxTGDvxy3c_/view">class
+                                    materials</a>). Upload your code to <a target="_blank"
+                                    href="https://codepen.io/">codepen</a>.</li>
+                            <li><input type="checkbox" name="hw10-2"> Watch <a target="_blank"
+                                    href="https://youtu.be/hdI2bqOjy3c">Javascript crash course for beginners</a></li>
+                            <li class="no-new">Nothing new added in class 11</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h3>More Flexbox</h3>
+                        <ul>
+                            <li><input type="checkbox" name="hw10-pw1"> <a target="_blank"
+                                    href="https://www.freecodecamp.org/news/css-flexbox-tutorial-with-cheatsheet/">FCC
+                                    Flexbox Tutorial</a></li>
+                            <li><input type="checkbox" name="hw10-pw2"> <a target="_blank"
+                                    href="https://youtu.be/JJSoEo8JSnc">Flexbox in 20 minutes</a></li>
+                            <li><input type="checkbox" name="hw10-pw3"> <a target="_blank"
+                                    href="https://mastery.games/flexboxzombies/">Flexbox Zombies</a></li>
+                        </ul>
+                    </td>
+                    <td><a class="submit" target="_blank" href="https://forms.gle/7r1obfquRuih9BEu7">Submit</a> <abbr
+                            title="You can optionally submit class 8 push work here.">Note</abbr></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>15</td>
+                    <td> <input type="checkbox" name="hw12"></td>
+                    <td>
+                        <ul>
+                            <li class="required"><input type="checkbox" name="hw12-1"> Read <a target="_blank"
+                                    href="https://javascript.info/variables">Javascript.info: Variables</a> and do the
+                                tasks</li>
+                            <li class="required"><input type="checkbox" name="hw12-2"> Read <a target="_blank"
+                                    href="https://javascript.info/function-basics">Javascript.info: Function Basics</a>
+                                and do the tasks. Screenshot your work or upload to <a target="_blank"
+                                    href="https://codepen.io/">codepen</a> (both sets of tasks).</li>
+                            <li><input type="checkbox" name="hw12-3"> Delete the JS and do it again for all assignments
+                                in class (picker, calculator, angry parent, etc)</li>
+                            <li><input type="checkbox" name="hw12-4"> Plan out your networking!</li>
+                            <li><input type="checkbox" name="hw12-5"> Do something special for yourself</li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td>See Class 13</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>15</td>
+                    <td> <input type="checkbox" name="hw13"></td>
+                    <td>
+                        <ul>
+                            <li class="required"><input type="checkbox" name="hw13-1"> Read <a target="_blank"
+                                    href="https://javascript.info/function-expressions">Javascript.info: Function
+                                    Expressions</a> and do the tasks</li>
+                            <li class="required"><input type="checkbox" name="hw13-2"> Read <a target="_blank"
+                                    href="https://javascript.info/arrow-function-basics">Javascript.info: Arrow Function
+                                    Basics</a> and do the tasks. Screenshot your work or upload to <a target="_blank"
+                                    href="https://codepen.io/">codepen</a> (both sets of tasks). </li>
+                            <li><input type="checkbox" name="hw13-3"> NETWORK!</li>
+                            <li><input type="checkbox" name="hw13-4"> Read <a target="_blank"
+                                    href="https://github.com/thejsway/thejsway/blob/master/manuscript/chapter04.md">The
+                                    JS Way: Loops</a> </li>
+                            <li class="no-new">Nothing new added in class 14</li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td><a class="submit" target="_blank" href="https://forms.gle/i4skrmpk1HiXXg6ZA">Submit</a></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>16</td>
+                    <td> <input type="checkbox" name="hw15"></td>
+                    <td>
+                        <ul>
+                            <li class="required"><input type="checkbox" name="hw15-1"> COMMENT OUT YOUR JS CODE FROM
+                                CLASS (PICKER, CALCULATOR, ETC) TYPE IT ALL OUT AGAIN WITHOUT LOOKING, PEEK IF YOU HAVE
+                                TO. REPEAT UNTIL YOU DO NOT HAVE TO PEEK. DELETE YOUR JS ENTIRELY AND DO IT AGAIN. THEN
+                                DO IT AGAIN BUT CHANGE SOMETHING! (You have to submit your changed code. Upload to <a
+                                    target="_blank" href="https://codepen.io/">codepen</a>.)</li>
+                            <li class="required">(Due class 19) Set up your portfolio </li>
+                            <li class="required">(Due class 19) Draft your proposal/contract</li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td><a class="submit" target="_blank" href="https://forms.gle/q9qvPkrH5jKgEfxBA">Submit</a></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>19</td>
+                    <td> <input type="checkbox" name="hw16"></td>
+                    <td>
+                        <ul>
+                            <li class="required"><input type="checkbox" name="hw16-1"> (From class 15) Set up your
+                                portfolio </li>
+                            <li class="required"><input type="checkbox" name="hw16-2"> (From class 15) Draft your
+                                proposal/contract</li>
+                            <li><input type="checkbox" name="hw16-3"> Read <a target="_blank"
+                                    href="https://www.poetryfoundation.org/poems/51642/invictus">Invictus (poem)</a>
+                            </li>
+                            <li><input type="checkbox" name="hw16-4"> Read <a target="_blank"
+                                    href="https://github.com/bpesquet/thejsway">The JS Way</a> (3, 2, 1... Code! through
+                                Write Functions)</li>
+                            <li><input type="checkbox" name="hw16-5"> Read <a target="_blank"
+                                    href="http://eloquentjavascript.net/3rd_edition/">Eloquent Javascript</a> (Chapters
+                                1 - 3)</li>
+                            <li><input type="checkbox" name="hw16-6"> Do <a target="_blank"
+                                    href="https://www.codecademy.com/learn/introduction-to-javascript ">Codecademy:
+                                    Intro to Javascript</a> (1-6)</li>
+                            <li><input type="checkbox" name="hw16-7"> Watch <a target="_blank"
+                                    href="ttps://youtu.be/SWYqp7iY_Tc">Git and GitHub crash course</a> </li>
+                            <li class="no-new">Nothing new added in classes 17 &amp; 18</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h3>Extra Reading </h3>
+                        <ul>
+                            <li><input type="checkbox" name="hw16-pw1"> <a target="_blank"
+                                    href="https://jwiegley.github.io/git-from-the-bottom-up/">Git from the bottom up</a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td><a class="submit" target="_blank" href="https://forms.gle/q9qvPkrH5jKgEfxBA">Submit</a> <abbr
+                            title="(It says to submit your JS tasks but the Javascript.info tasks were all previously submitted. It's probably fine to submit just your portfolio and proposal.">Note</abbr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>22</td>
+                    <td> <input type="checkbox" name="hw19"></td>
+                    <td>
+                        <ul>
+                            <li><input type="checkbox" name="hw19-1"> Read <a target="_blank"
+                                    href="https://github.com/thejsway/thejsway/blob/master/manuscript/chapter07.md">The
+                                    JS Way: Arrays</a></li>
+                            <li><input type="checkbox" name="hw19-2"> Read <a target="_blank"
+                                    href="https://github.com/thejsway/thejsway/blob/master/manuscript/chapter06.md">The
+                                    JS Way: Objects</a> </li>
+                            <li><input type="checkbox" name="hw19-3"> Read <a target="_blank"
+                                    href="https://javascript.info/array-methods">Javascript.info: Array Methods</a> and
+                                do the tasks</li>
+                            <li><input type="checkbox" name="hw19-4"> Read <a target="_blank"
+                                    href="https://eloquentjavascript.net/04_data.html">Eloquent Javascript: Objects and
+                                    Arrays</a> and do the tasks</li>
+                            <li><input type="checkbox" name="hw19-5"> Do a minimum of 1 <a target="_blank"
+                                    href="https://www.codewars.com/kata/search/javascript?beta=false&amp;q=&amp;r%5B%5D=-8&amp;tags=Fundamentals&amp;xids=completed">8
+                                    kyu Fundamentals on CodeWars</a> EVERY DAY. Spend at least 20 mins trying to solve
+                                it before looking at the solution! (The 100 Devs clan name is <strong>#100Devs -
+                                    leonnoel.com/twitch</strong>)</li>
+                            <li><input type="checkbox" name="hw19-6"> Do <a target="_blank"
+                                    href="https://javascript30.com/">Jaavascript 30: Day 04 Array Cardio</a> (super
+                                hard, do it on Discord together) and then do it AGAIN.</li>
+                            <li class="no-new">Nothing new added in classes 20 &amp; 21</li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td>Nothing to submit </td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>28</td>
+                    <td> <input type="checkbox" name="hw22"></td>
+                    <td>
+                        <ul>
+                            <li><input type="checkbox" name="hw22-1"> Watch and do <a target="_blank"
+                                    href="https://youtu.be/PFmuCDHHpwk">Object-oriented Javascript</a> </li>
+                            <li><input type="checkbox" name="hw22-2"> Watch <a target="_blank"
+                                    href="https://youtu.be/0fKg7e37bQE​">Github in 20 minutes</a> </li>
+                            <li><input type="checkbox" name="hw22-3"> Do <a target="_blank"
+                                    href="https://aka.ms/learnwithleon">Intro to Github</a></li>
+                            <li><input type="checkbox" name="hw22-4"> (Before class 24, if you would like to type along)
+                                Try getting Git installed. Here are some resources: <a target="_blank"
+                                    href="https://github.com/git-guides/install-git">Github guide</a>, <a
+                                    target="_blank"
+                                    href="https://www.theodinproject.com/courses/foundations/lessons/setting-up-git">Odin
+                                    Project guide</a>. If on Windows, please use Git Bash and look into setting up <a
+                                    target="_blank" href="https://ubuntu.com/wsl">WSL</a>.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h3>Push Work</h3>
+                        <ul>
+                            <li class="required"><input type="checkbox" name="hw22-pw1"> Complete <a target="_blank"
+                                    href="https://github.com/leonnoel/100devs-calculator">Javascript Calculator</a>
+                            </li>
+                            <li><input type="checkbox" name="hw22-pw2"> Read <a target="_blank"
+                                    href="https://javascript.info/object-basics">Javascript.info: Objects</a> (whole
+                                chapter) and do the tasks</li>
+                            <li><input type="checkbox" name="hw22-pw3"> Read <a target="_blank"
+                                    href="https://medium.com/@hamzzza.ahmed95/four-pillars-of-object-oriented-programming-oop-e8d7822aa219">Pillars
+                                    of OOP</a></li>
+                        </ul>
+                    </td>
+                    <td>See class 26 </td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>38</td>
+                    <td> <input type="checkbox" name="hw25"></td>
+                    <td>
+                        <ul>
+                            <li class="required"><input type="checkbox" name="hw25-1"> Complete the <a target="_blank"
+                                    href="https://docs.google.com/document/d/1L2vTX3qvLhoGHeG5cVD2ljCfRGr1uJ_Gf-hNZj9KzTg">Professional
+                                    Checklist </a> </li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td><a class="submit" target="_blank" href="https://forms.gle/Pt7kwXndftDedcbX8">Submit</a> <abbr
+                            title="This is due after several other homework assignments because it could take you a while to finish - start early!">Note</abbr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>28</td>
+                    <td> <input type="checkbox" name="hw26"></td>
+                    <td>
+                        <ul>
+                            <li class="required"><input type="checkbox" name="hw26-1"> Make the cocktailDB API work with
+                                spaces between the names!</li>
+                            <li class="required"><input type="checkbox" name="hw26-2"> Find three APIs from <a
+                                    target="_blank" href="https://github.com/public-apis/public-apis">this list</a> (not
+                                all of them work) and build three simple apps using those APIs.</li>
+                            <li><input type="checkbox" name="hw26-3"> Do Codewars daily! </li>
+                            <li><input type="checkbox" name="hw26-4"> Do Anki daily!</li>
+                            <li class="no-new">Nothing new added in class 27</li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td><a class="submit" target="_blank" href="https://forms.gle/mSR6TGf7F6iN54Wy5">Submit</a> <abbr
+                            title="You can optionally submit push work from class 22 here">Note</abbr> </td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>30</td>
+                    <td> <input type="checkbox" name="hw28"></td>
+                    <td>
+                        <ul>
+                            <li><input type="checkbox" name="hw28-1"> Do <a target="_blank"
+                                    href="https://www.codecademy.com/learn/introduction-to-javascript">Intro to JS
+                                    Codecademy course</a>. ~30 hours to finish whole course - don't pay! (there was a
+                                break after class 28 so this is expected to take longer than the normal homework)</li>
+                            <li class="no-new">Nothing new added in class 29</li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td>Nothing to Submit </td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>32</td>
+                    <td> <input type="checkbox" name="hw26"></td>
+                    <td>
+                        <ul>
+                            <li><input type="checkbox" name="hw30-1"> Read <a target="_blank"
+                                    href="https://github.com/thejsway/thejsway/blob/master/manuscript/chapter09.md">The
+                                    JS Way: Object-Oriented Programming</a></li>
+                            <li><input type="checkbox" name="hw30-2"> Do 7 Codewars katas</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h3>Push work</h3>
+                        <ul>
+                            <li><input type="checkbox" name="hw30-pw1"> Read <a target="_blank"
+                                    href="https://eloquentjavascript.net/06_object.html">Eloquent JS: The Secret Life of
+                                    Objects</a></li>
+                        </ul>
+                    </td>
+                    <td>Nothing to Submit </td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>36</td>
+                    <td> <input type="checkbox" name="hw31"></td>
+                    <td>
+                        <ul>
+                            <li class="required"><input type="checkbox" name="hw31-1"> Get a paid client, volunteer, or
+                                contribute To free software</li>
+                            <li><input type="checkbox" name="hw31-2"> (Due next class) Please review, play with, and
+                                break the code we go over tonight. Get lost in it, come with questions, and be ready to
+                                review.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h3>Push Work</h3>
+                        <ul>
+                            <li><input type="checkbox" name="hw31-pw1"> Do Codewars Array Problems: <a target="_blank"
+                                    href="https://www.codewars.com/kata/search/javascript?q=&amp;r%5B%5D=-8&amp;tags=Arrays&amp;xids=completed&amp;beta=false">8
+                                    kyu</a>, <a target="_blank"
+                                    href="https://www.codewars.com/kata/search/javascript?q=&amp;r%5B%5D=-7&amp;tags=Arrays&amp;xids=completed&amp;beta=false">7
+                                    kyu</a>, <a target="_blank"
+                                    href="https://www.codewars.com/kata/search/javascript?q=&amp;r%5B%5D=-6&amp;tags=Arrays&amp;xids=completed&amp;beta=false">6
+                                    kyu</a>, <a target="_blank"
+                                    href="https://www.codewars.com/kata/search/javascript?q=&amp;r%5B%5D=-7&amp;tags=Arrays&amp;xids=completed&amp;beta=false">7
+                                    kyu</a>, <a target="_blank"
+                                    href="https://www.codewars.com/kata/search/javascript?q=&amp;r%5B%5D=-8&amp;tags=Arrays&amp;xids=completed&amp;beta=false">8
+                                    kyu</a>.</li>
+                        </ul>
+                    </td>
+                    <td><a class="submit" target="_blank" href="https://forms.gle/Ha27LvZAJsFiY2Dx7">Submit</a> <abbr
+                            title="This is another long-term project, don't put it off!">Note</abbr> </td>
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td>33</td>
+                    <td> <input type="checkbox" name="hw32"></td>
+                    <td>
+                        <ul>
+                            <li><input type="checkbox" name="hw32-1"> Do a team project</li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td>Nothing to Submit </td>
+                </tr>
+                <tr>
+                    <td>33</td>
+                    <td>35</td>
+                    <td> <input type="checkbox" name="hw33"></td>
+                    <td>
+                        <ul>
+                            <li><input type="checkbox" name="hw33-1"> Watch our <a target="_blank"
+                                    href="https://www.youtube.com/watch?v=QoweoDsi5ZI">Crafting your story</a> class
+                                from last cohort</li>
+                            <li><input type="checkbox" name="hw33-2"> Read <a target="_blank"
+                                    href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await">MDN:
+                                    Async/Await</a> </li>
+                            <li><input type="checkbox" name="hw33-3"> Watch <a target="_blank"
+                                    href="https://www.youtube.com/watch?v=vn3tm0quoqE">The Async/Await Episode</a> (he
+                                goes <em>really</em> fast so slow it down or watch it a couple of times)</li>
+                            <li><input type="checkbox" name="hw33-4"> Type out all examples!</li>
+                            <li><input type="checkbox" name="hw33-5"> (Due class 36) READ <a target="_blank"
+                                    href="https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70">Modern
+                                    Javascript For Dinosaurs</a> (the article also links to a video course which is free
+                                if you prefer that)</li>
+                            <li><input type="checkbox" name="hw33-6"> (Due class 36) Watch <a target="_blank"
+                                    href="https://youtu.be/fBNz5xF-Kx4">Node.js crash course</a> (just get through it)
+                            </li>
+                            <li><input type="checkbox" name="hw33-7"> (Due class 38) Start prepping <a target="_blank"
+                                    href="https://docs.google.com/document/d/1p7DhCsLOMMybYfePWLlD1-_8KU20zkBoArH4pnW1o3c">THE
+                                    BANK</a></li>
+                            <li class="no-new">Nothing new added in class 34</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h3>Push Work</h3>
+                        <ul>
+                            <li><input type="checkbox" name="hw33-pw1"> Read <a target="_blank"
+                                    href="https://javascript.info/async">Javascript.info: Async/Await</a> and do the
+                                tasks</li>
+                        </ul>
+                    </td>
+                    <td>Nothing to Submit </td>
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td>38</td>
+                    <td> <input type="checkbox" name="hw35"></td>
+                    <td>
+                        <ul>
+                            <li><input type="checkbox" name="hw35-1"> Make node-backend-simple-json more readable</li>
+                            <li><input type="checkbox" name="hw35-2"> Make a coin flip game where the randomization
+                                happens server side </li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td>Nothing to Submit </td>
+                </tr>
+                <tr>
+                    <td>36</td>
+                    <td>38</td>
+                    <td> <input type="checkbox" name="hw36"></td>
+                    <td>
+                        <ul>
+                            <li><input type="checkbox" name="hw36-1"> Watch <a target="_blank"
+                                    href="https://docs.google.com/document/d/1p7DhCsLOMMybYfePWLlD1-_8KU20zkBoArH4pnW1o3c">What
+                                    the heck is the event loop?</a></li>
+                            <li><input type="checkbox" name="hw36-2"> Watch <a target="_blank"
+                                    href="https://www.youtube.com/watch?v=cCOL7MC4Pl0">In the loop</a></li>
+                            <li><input type="checkbox" name="hw36-3"> Read and do <a target="_blank"
+                                    href="https://zellwk.com/blog/crud-express-mongodb/">Build a CRUD app</a> (SUPER
+                                IMPORTANT)</li>
+                            <li class="no-new">Nothing new added in class 37</li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td>Nothing to Submit </td>
+                </tr>
+                <tr>
+                    <td>38</td>
+                    <td>39</td>
+                    <td> <input type="checkbox" name="hw38"></td>
+                    <td>
+                        <ul>
+                            <li><input type="checkbox" name="hw37-1"> Do: Start prepping <a target="_blank"
+                                    href="https://docs.google.com/document/d/1p7DhCsLOMMybYfePWLlD1-_8KU20zkBoArH4pnW1o3c">THE
+                                    BANK</a> - More!</li>
+                            <li><input type="checkbox" name="hw37-2"> Create <a target="_blank"
+                                    href="https://signup.heroku.com/">Heroku</a>, <a target="_blank"
+                                    href="https://www.mongodb.com/cloud/atlas/register">Mongo Atlas</a>, and <a
+                                    target="_blank" href="https://identity.getpostman.com/signup">Postman</a> accounts
+                            </li>
+                            <li><input type="checkbox" name="hw37-3"> Read <a target="_blank"
+                                    href="https://fullstackopen.com/en/part3/node_js_and_express">Fullstack Open:
+                                    Node.js and Express</a></li>
+                            <li><input type="checkbox" name="hw37-4"> Read and play with our code from today</li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td>Nothing to Submit </td>
+                </tr>
+                <tr>
+                    <td>39</td>
+                    <td>41</td>
+                    <td> <input type="checkbox" name="hw39"></td>
+                    <td>
+                        <ul>
+                            <li class="required"><input type="checkbox" name="hw39-1"> Make your own API and push to
+                                Heroku</li>
+                            <li class="no-new">Nothing new added in classes 40 &amp; 41</li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td><a class="submit" target="_blank" href="https://forms.gle/zia8G1FSugXCsVLk9">Submit</a> </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script src="/main.js"></script>
+</body>
+
+</html>
