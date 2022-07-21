@@ -166,6 +166,34 @@ body {
   margin: 3rem auto;
 }
 
+body {
+  font-family: "Merriweather", serif;
+  color: #1d3557;
+  background: white;
+}
+
+header {
+  display: flex;
+  align-items: baseline;
+}
+
+h1 {
+  font: 500 3.5rem "Rubik", sans-serif;
+  margin-bottom: 1rem;
+  color: #A31420;
+  flex: 2;
+}
+
+header>div {
+  flex: 1;
+  text-align: right;
+  font: 1.5rem "Rubik", sans-serif;
+}
+
+#about {
+  display: none;
+}
+
 .stick {
   position: sticky;
   top: 0;
@@ -192,12 +220,6 @@ thead {
   z-index: 2;
 }
 
-body {
-  font-family: "Merriweather", serif;
-  color: #1d3557;
-  background: white;
-}
-
 a {
   color: #A31420;
   text-decoration: none;
@@ -217,12 +239,6 @@ strong {
 
 em {
   font-style: italic;
-}
-
-h1 {
-  font: 500 3.5rem "Rubik", sans-serif;
-  margin-bottom: 1rem;
-  color: #A31420;
 }
 
 table {
@@ -270,10 +286,7 @@ table tbody td:last-child {
   font-weight: bold;
 }
 
-table tbody td:first-child input[type=checkbox],
-table tbody td:nth-child(2) input[type=checkbox],
-table tbody td:nth-child(3) input[type=checkbox],
-table tbody td:last-child input[type=checkbox] {
+table tbody td:nth-child(3) input[type=checkbox] {
   float: none;
   margin: 0 auto;
 }
@@ -335,6 +348,7 @@ a.submit {
   color: white;
   font-family: "Rubik", sans-serif;
   padding: 1rem 1.5rem;
+  margin-bottom: 0.6rem;
   border: 1px solid #A31420;
   border-radius: 5px;
   box-shadow: 2px 2px 7px -3px rgba(29, 53, 87, 0.7);
@@ -351,6 +365,13 @@ a.submit:hover {
   background: #E52434;
   border-color: #C91826;
   transition: all 0.5s ease;
+}
+
+table tbody td label {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+  font: 1.5rem "Rubik", sans-serif;
 }
 
 input[type=checkbox] {
