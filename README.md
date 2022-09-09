@@ -26,6 +26,23 @@ In addition, I added some Javascript to keep track of the completed status of in
 
 The main lesson I learned from this project is: keep in mind future maintainability from the beginning, especially for a project that requires frequent updates. I made the tracker before the classes had completed, and the process of adding new homework is cumbersome, but I don't want to introduce any breaking changes that would affect current users. If I had spent more time in the beginning considering what the updating process would involve, I would have opted for a database and HTML template.
 
+# License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+Copyright (c) 2022-present, Laura Abro
+
+## How to Contribute
+
+If you spot any errors in the tracker, please fork the repo and create a pull request, or you can also simply open an issue.
+
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 
 
