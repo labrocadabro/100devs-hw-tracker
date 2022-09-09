@@ -1,6 +1,6 @@
 # 100Devs Homework Tracker
 
-This is a homework tracker for the [#100 Devs Academy training course](https://leonnoel.com/100devs/). The tracker uses localStorage to keep track of checkbox status, so as long as you keep using the same browser, your completions will be tracked.
+This is a homework tracker for the <a href="https://leonnoel.com/100devs/" target="_blank">#100 Devs Academy training course</a>. The tracker uses localStorage to keep track of checkbox status, so as long as you keep using the same browser, your completions will be tracked.
 
 **Link to live tracker:** <a href="https://labrocadabro.github.io/100devs-hw-tracker/" target="_blank">#100Devs homework tracker</a>
 
