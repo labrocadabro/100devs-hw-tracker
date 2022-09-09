@@ -2,13 +2,14 @@
 
 This is a homework tracker for the [#100 Devs Academy training course](https://leonnoel.com/100devs/). The tracker uses localStorage to keep track of checkbox status, so as long as you keep using the same browser, your completions will be tracked.
 
-**Link to live tracker:** [#100Devs homework tracker](https://labrocadabro.github.io/100devs-hw-tracker/)
+**Link to live tracker:** <a href="https://labrocadabro.github.io/100devs-hw-tracker/" target="_blank">#100Devs homework tracker]</a>
 
-![Image of the homework tracker](https://labrocadabro.github.io/100devs-hw-tracker/site-prewview.png)
+
+![Image of the homework tracker](https://labrocadabro.github.io/100devs-hw-tracker/site-preview.png)
 
 ## How It's Made:
 
-**Built with:** [HTML5](https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg) [CSS3](https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg) [Javascript](https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg)
+**Built with:** ![HTML5](https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg) ![CSS3](https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg) ![Javascript](https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg)
 
 The project is primarily HTML and CSS. The essential Javascript is the storage of checkbox checked/unchecked status in localStorage, since without that users would not be able to keep track of their progress. 
 
