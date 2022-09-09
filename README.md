@@ -8,7 +8,7 @@ This is a homework tracker for the [#100 Devs Academy training course](https://l
 
 ## How It's Made:
 
-**Built with:** HTML, CSS, and JavaScript
+**Built with:** [HTML5](https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg) [CSS3](https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg) [Javascript](https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg)
 
 The project is primarily HTML and CSS. The essential Javascript is the storage of checkbox checked/unchecked status in localStorage, since without that users would not be able to keep track of their progress. 
 
