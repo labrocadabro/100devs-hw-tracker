@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -139,7 +146,8 @@ table {
 
 /* Box Model Hack */
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Clear fix hack */
@@ -173,19 +181,27 @@ body {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 h1 {
   font: 500 3.5rem "Rubik", sans-serif;
   margin-bottom: 1rem;
   color: #A31420;
-  flex: 2;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
 header>div {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: right;
   font: 1.5rem "Rubik", sans-serif;
 }
@@ -223,6 +239,8 @@ thead {
 a {
   color: #A31420;
   text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   border-bottom: 1px dotted transparent;
 }
@@ -230,6 +248,8 @@ a {
 a:hover {
   border-bottom: 1px dotted #457b9d;
   color: #800F18;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
@@ -247,7 +267,8 @@ table {
 
 table thead tr {
   border-bottom: 1px solid #1d3557;
-  box-shadow: 0 5px 10px -7px rgba(29, 53, 87, 0.7);
+  -webkit-box-shadow: 0 5px 10px -7px rgba(29, 53, 87, 0.7);
+          box-shadow: 0 5px 10px -7px rgba(29, 53, 87, 0.7);
 }
 
 table thead th {
@@ -351,12 +372,15 @@ a.submit {
   margin-bottom: 0.6rem;
   border: 1px solid #A31420;
   border-radius: 5px;
-  box-shadow: 2px 2px 7px -3px rgba(29, 53, 87, 0.7);
+  -webkit-box-shadow: 2px 2px 7px -3px rgba(29, 53, 87, 0.7);
+          box-shadow: 2px 2px 7px -3px rgba(29, 53, 87, 0.7);
   text-shadow: 2px 2px 2px #A31420;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-weight: 500;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -364,6 +388,8 @@ a.submit:hover {
   text-decoration: none;
   background: #E52434;
   border-color: #C91826;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -375,7 +401,9 @@ table tbody td label {
 }
 
 input[type=checkbox] {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: #fff;
   margin: 0 0.5rem 0 0;
   font: inherit;
@@ -384,7 +412,10 @@ input[type=checkbox] {
   height: 1.6rem;
   border: 1px solid currentColor;
   border-radius: 0.3rem;
-  transform: translateY(0.1rem);
+  -webkit-transform: translateY(0.1rem);
+      -ms-transform: translateY(0.1rem);
+          transform: translateY(0.1rem);
+  display: -ms-grid;
   display: grid;
   place-content: center;
   float: left;
@@ -392,15 +423,27 @@ input[type=checkbox] {
 
 input[type=checkbox]:before {
   content: "";
-  transform: scale(0);
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
   width: 1rem;
   height: 1rem;
-  box-shadow: inset 1rem 1rem #A31420;
+  -webkit-box-shadow: inset 1rem 1rem #A31420;
+          box-shadow: inset 1rem 1rem #A31420;
+  -webkit-transition: 120ms -webkit-transform ease-in-out;
+  transition: 120ms -webkit-transform ease-in-out;
+  -o-transition: 120ms transform ease-in-out;
   transition: 120ms transform ease-in-out;
-  transform-origin: bottom left;
-  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transition: 120ms transform ease-in-out, 120ms -webkit-transform ease-in-out;
+  -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+          clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }
 
 input[type=checkbox]:checked:before {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
