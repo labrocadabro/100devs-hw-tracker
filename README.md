@@ -43,11 +43,3 @@ Don't forget to give the project a star! Thanks again!
 [MIT](https://opensource.org/licenses/MIT)
 
 Copyright (c) 2022-present, Laura Abro
-
-
-
-
-
-
-
-
