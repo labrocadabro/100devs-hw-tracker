@@ -60,20 +60,48 @@ function sectionDone(e) {
 function toggleAbout() {
     const about = document.querySelector('#about');
     const showHide = document.querySelector('#about-link span');
-    showHide.innerText = (showHide.innerText === "Show" ? "Hide" : "Show");
+    showHide.innerText = (showHide.value === "Show" ? "Hide" : "Show");
     about.style.display = (about.style.display === "" ? "block" : "");
     console.log(about.style.display)
 
 }
 
+function getExportData() {
+	const data = JSON.stringify(localStorage);
+	exportData.innerText = data;
+	modal.style.display = "block";
+}
+
+function copyData() {
+	exportData.select();
+	exportData.setSelectionRange(0, 99999); // For mobile devices
+	navigator.clipboard.writeText(exportData.value);
+	const confirm = document.getElementById('confirmCopy');
+	confirm.innerText = "Copied!";
+	setTimeout(() => confirm.innerText = "", 1000);
+	
+}
+
 let cbstate = JSON.parse(localStorage['CBState'] || '{}');
 const opacity = "0.5";
+const modal = document.getElementById("exportModal");
+const closeModal = document.getElementById("closeModal");
+const exportData = document.getElementById('exportData');
+
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+checkboxes.forEach(checkbox => checkbox.addEventListener('click', checkboxFunctions));
+
 document.querySelector("#about-link").addEventListener('click', toggleAbout);
+document.getElementById('export').addEventListener('click', getExportData);
+document.getElementById("copyData").addEventListener('click', copyData);
+
+closeModal.addEventListener('click', () => modal.style.display = "none");
+window.addEventListener('click', (e) => {
+	if (e.target == modal) modal.style.display = "none";
+});
 
 updateFromLS();
 
-const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-for (checkbox of checkboxes) {
-    checkbox.addEventListener('click', checkboxFunctions);
-}
+
+
 

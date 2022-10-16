@@ -34,7 +34,7 @@
 			<p class="left"><span class="required">*</span> homework for submission</p>
 			<!-- <p class="right"><input type="checkbox" autocomplete="off" class="hw" name="hide" id="hide"> Hide completed
 																																																						</p> -->
-			<p class="right"><a href="https://github.com/labrocadabro/100devs-hw-tracker/" target="_blank">View
+			<p class="right"><a href="javascript:;" id="export">Export Progress</a> | <a href="https://github.com/labrocadabro/100devs-hw-tracker/" target="_blank">View
 					on Github</a></p>
 			<div class="clear"></div>
 		</div>
@@ -638,6 +638,18 @@
 			</tbody>
 		</table>
 	</main>
+	<div id="exportModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+		<h1>Export Data</h1>
+    <textarea id="exportData"></textarea>
+		<p id="confirmCopy"></p>
+		<a class="submit" id="copyData" href="javascript:;">Copy to Clipboard</a>
+  </div>
+
+</div>
 	<script src="./main.js"></script>
 </body>
 

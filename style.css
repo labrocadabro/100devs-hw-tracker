@@ -447,3 +447,74 @@ input[type=checkbox]:checked:before {
       -ms-transform: scale(1);
           transform: scale(1);
 }
+
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+/* The Close Button */
+#closeModal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}
+
+#closeModal:hover,
+#closeModal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+#exportData {
+	background: #3a3b3c;
+	color: #f8f8ff;
+	max-width: 600px;
+	width: 100%;
+	padding: 2rem 4rem;
+	border-radius: 5px;
+	line-height: 2.5rem;
+	letter-spacing: 0.15rem;
+}
+
+#copyData {
+	font-size: 2rem;
+	max-width: 300px;
+	text-align: center;
+	padding: 1.5rem;
+}
+
+#confirmCopy {
+	height: 40px;
+	padding: 10px;
+	font-size: 20px;
+	color: #C91826;
+}
