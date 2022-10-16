@@ -5,13 +5,15 @@ function checkboxFunctions(e) {
 }
 
 function updateFromLS() {
-    for (let name in cbstate) {
-        const cb = document.querySelector('input[name="' + name + '"]');
-        if (cb) cb.checked = true;
-        if (cb.className === "done") {
-            document.querySelector(`tr.${cb.id}`).style.opacity = opacity;
-        }
-    }
+	for (let name in cbstate) {
+			const cb = document.querySelector('input[name="' + name + '"]');
+			if (cb) {
+				cb.checked = true;
+				if (cb.className === "done") {
+						document.querySelector(`tr.${cb.id}`).style.opacity = opacity;
+				}
+			}
+	}
 }
 
 function updateToLS(e) {
