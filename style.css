@@ -198,6 +198,23 @@ h1 {
           flex: 2;
 }
 
+h2 {
+  font: 500 2.5rem "Rubik", sans-serif;
+  margin-bottom: 1rem;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+h2 a {
+	text-decoration: underline;
+	text-underline-offset: 5px;
+	color: #457b9d;
+}
+h2 a:hover {
+	border: none;
+	text-decoration: none;
+}
+
 header>div {
   -webkit-box-flex: 1;
       -ms-flex: 1;
