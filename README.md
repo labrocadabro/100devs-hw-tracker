@@ -1,4 +1,10 @@
-# 100Devs Homework Tracker
+# PLEASE NOTE
+
+This project has been superceded by [Community Taught](https://communitytaught.org/), a more comprehensive progress tracker. I'm leaving this up for anyone who still might want to use it, but it is no longer maintained and any (hopefully small) errors in the data will not be fixed.
+
+
+
+## 100Devs Homework Tracker
 
 This is a homework tracker for the <a href="https://leonnoel.com/100devs/" target="_blank">#100 Devs Academy training course</a>. The tracker uses localStorage to keep track of checkbox status, so as long as you keep using the same browser, your completions will be tracked.
 
